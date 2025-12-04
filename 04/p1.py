@@ -6,7 +6,6 @@ def roll_check(y_index, x_index, puzzle_input):
         y_index >=len(puzzle_input) or
         y_index < 0):
         return 0
-    
     if puzzle_input[y_index][x_index] == "@":
         return 1
     return 0
@@ -29,7 +28,6 @@ def roll_accessible(y_index, x_index, puzzle_input):
 
 def main():
     input_file = "puzzle_input.txt"
-
     with open(input_file, "r") as file:
         puzzle_input = []
         for line in file.read().splitlines():

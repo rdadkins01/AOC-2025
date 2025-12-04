@@ -44,7 +44,6 @@ def remove_rolls(grid, accessible_rolls):
 
 def main():
     input_file = "puzzle_input.txt"
-
     with open(input_file, "r") as file:
         puzzle_input = []
         for line in file.read().splitlines():
@@ -57,7 +56,6 @@ def main():
         puzzle_input = remove_rolls(puzzle_input, accessible_rolls)
         if len(accessible_rolls) > 0:
             total_rolls_removed += len(accessible_rolls)
-            rolls_removed = True
         else:
             rolls_removed = False
 
